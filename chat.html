@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <strong id="me-name"></strong>
+        <button type="button" id="logout">Log out</button>
+      </div>
+
+      <h2>Chats</h2>
+      <ul id="conversation-list"></ul>
+      
+
+      <h2>People</h2>
+      <ul id="user-list"></ul>
+
+      <h2>Create a group</h2>
+      <form id="group-form">
+          <input type="text" id="group-name" placeholder="Group name">
+          <div id="group-members"></div>
+          <button type="submit">Create</button>
+      </form>
+    </aside>
+
+    <section class="chat">
+      <div class="chat-header" id="chat-title">Select a chat</div>
+      <div class="messages" id="messages"></div>
+      <form id="send-form" hidden>
+        <input type="text" id="message-input" placeholder="Type a message" autocomplete="off">
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>

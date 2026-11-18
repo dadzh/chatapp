@@ -1,0 +1,14 @@
+# Secrets: never commit
+private/.env
+.env
+
+# Libraries: reinstall with "composer install" in private/
+private/vendor/
+
+# macOS
+.DS_Store
+
+# Logs and test files
+*.log
+api/*test*.php
+test.html
